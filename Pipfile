@@ -8,6 +8,8 @@ flask = "*"
 requests = "*"
 beautifulsoup4 = "*"
 lxml = "*"
+pillow = "*"
+numpy = "*"
 
 [dev-packages]
 autopep8 = "*"

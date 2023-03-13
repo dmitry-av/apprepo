@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generated Example</title>
+</head>
+<body>
+	<h1 align="center" >Generated Captcha</h1>
+    {% if base64img %}
+    <div style="text-align: center;">
+	<img src="{{ base64img }}" alt="gererated image">
+    </div>
+    {% endif %}
+    <div class="form" align="center">
+        <form action="/" method="POST">
+            <input type="text" name="input_text" id="input_text">
+            <input type="hidden" name="check_text" value="{{ check_text }}">
+            <input type="submit" value="Check">
+        </form>
+    </div>
+    <div style="text-align: center;">
+    <p>{{ message }}</p>
+    <a href="{{ url_for('home_page') }}">Back</a>
+    </div>
+</body>
+</html>
